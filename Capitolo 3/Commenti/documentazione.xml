@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Commenti</name>
+    </assembly>
+    <members>
+        <member name="T:Commenti.Program">
+            classe principale
+        </member>
+    </members>
+</doc>

@@ -37,7 +37,7 @@ namespace Structs
             Console.WriteLine("pt: {0}, {1}", pt.X, pt.Y);
             Console.WriteLine("pt2: {0}, {1}", pt2.X, pt2.Y);
 
-            Point pt3 = pt1 with { X = 123 };
+            Point pt3 = pt with { X = 123 };
             Console.WriteLine("pt3: {0}, {1}", pt3.X, pt3.Y);
 
         }

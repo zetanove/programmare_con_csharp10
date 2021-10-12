@@ -12,6 +12,8 @@ namespace Structs
         public double Y { get; set; }
         public readonly double Distance => Math.Sqrt(X * X + Y * Y);
 
+        // public readonly void Reset(int x) => X = x; //errore, non si può assegnare a X
+
         public readonly override string ToString() =>
             $"il punto ({X}, {Y}) si trova alla distanza {Distance} dall’origine";
 
@@ -42,4 +44,18 @@ namespace Structs
             return pt;
         }
     }
+
+    public readonly struct ReadonlyPoint
+    {
+        public readonly double X;
+        public readonly double Y;
+        //public string errorField; //Errore, il campo deve essere readonly
+
+        public ReadonlyPoint(double x, double y) => (X, Y) = (x, y);
+        public override string ToString() => $"({X}, {Y})";
+
+        
+    }
+
+
 }

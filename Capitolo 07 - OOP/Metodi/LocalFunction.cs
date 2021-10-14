@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace Metodi
@@ -18,6 +19,7 @@ namespace Metodi
             {
                 Console.WriteLine("fattoriale({0}) = {1}", i, Fattoriale(i));
 
+                [Obsolete]
                 int Fattoriale(int num)
                 {
                     Console.WriteLine("Sono all'interno del ciclo {0}", i); //closure

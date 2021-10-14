@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace GenericAttributes
 {
+    public class OldGenericAttr : Attribute
+    {
+        public Type TargetType { get; set; }
+    }
+
     [AttributeUsage(AttributeTargets.All, AllowMultiple = true)]
     public class Attr<T> : Attribute { }
 
@@ -15,6 +20,7 @@ namespace GenericAttributes
 
     [VehicleType<Car>]
     [Attr<string>]
+    [OldGenericAttr(TargetType=typeof(string))]
     public class GenericVehicle
     {
         [Attr<string>]
@@ -22,6 +28,9 @@ namespace GenericAttributes
         //[Attr<T>] // error
         void M() { }
     }
+
+
+    
 
     public abstract class Vehicle 
     {}

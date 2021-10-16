@@ -33,6 +33,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // button1
             // 
@@ -75,7 +76,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 238);
+            this.label1.Location = new System.Drawing.Point(29, 238);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 15);
             this.label1.TabIndex = 5;
@@ -93,6 +94,8 @@
             this.Controls.Add(this.progressBar2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

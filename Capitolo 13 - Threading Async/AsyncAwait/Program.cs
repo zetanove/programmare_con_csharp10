@@ -39,6 +39,8 @@ namespace AsyncAwait
             var result2 = await str;
             Console.WriteLine($"nella stringa {str} i numeri sono {result2}");
 
+            Test t = new Test();
+            var r = await t;
         }
 
         private async static void UseAwait()

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAwait", "AsyncAwait\As
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncStreams", "AsyncStreams\AsyncStreams.csproj", "{1AB70E58-7FB9-414F-8FEB-2DBF9A7A3F3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async Method Builder", "Async Method Builder\Async Method Builder.csproj", "{C7239425-D4EF-46BB-B058-58198E3F3F80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Awaiter", "Async Method Builder\Awaiter.csproj", "{C7239425-D4EF-46BB-B058-58198E3F3F80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

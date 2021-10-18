@@ -20,7 +20,7 @@ namespace CustomAttributes
         static void TestMain()
         {
             ObsoleteClass obj = new ObsoleteClass();
-            //obj.Metodo();
+            obj.Metodo();
         }
     }
 }

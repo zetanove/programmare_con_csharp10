@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallerInfoAttributes", "Cal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Reflection.csproj", "{6B6A2E69-88EE-4580-A15C-BBD900C7C936}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGenerationFull", "CodeGenerationFull\CodeGenerationFull.csproj", "{05A76982-A0FF-4D6C-930D-548B95361BB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6B6A2E69-88EE-4580-A15C-BBD900C7C936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B6A2E69-88EE-4580-A15C-BBD900C7C936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B6A2E69-88EE-4580-A15C-BBD900C7C936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05A76982-A0FF-4D6C-930D-548B95361BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A76982-A0FF-4D6C-930D-548B95361BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A76982-A0FF-4D6C-930D-548B95361BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A76982-A0FF-4D6C-930D-548B95361BB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

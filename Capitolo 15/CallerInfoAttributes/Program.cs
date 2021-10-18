@@ -60,7 +60,6 @@ namespace CallerInfoAttributes
         {
             Console.WriteLine(message1);
             Console.WriteLine(message2);
-            ArgumentNullException.ThrowIfNull
         }
 
 

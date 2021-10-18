@@ -53,4 +53,11 @@ class Program
 
         Console.WriteLine(result);
     }
+
+    public ValueTask<int> GetCustomerIdAsync()
+    {
+        return new ValueTask(1);
+
+        string str;
+    }
 }

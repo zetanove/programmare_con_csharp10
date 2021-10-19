@@ -7,7 +7,7 @@ namespace CustomAttributes
     [Obsolete("Classe non più supportata")]
     public class ObsoleteClass
     {
-        [Obsolete("Il metodo non può essere più usato", true)]
+        [Obsolete("Il metodo non può essere più usato")]
         public void Metodo()
         {
         }

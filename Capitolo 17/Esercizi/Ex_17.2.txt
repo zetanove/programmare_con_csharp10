@@ -1,0 +1,5 @@
+L'implementazione richiesta dall'esercizio è quella presente nei progetti
+
+ClassNameAnalyzer
+ClassNameAnalyzer.Test
+ClassNameAnalyzer.Vsix

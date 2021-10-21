@@ -1,65 +1,47 @@
-﻿using System.Runtime.CompilerServices;
+﻿using Awaitable;
+using System.Text;
 
-public class MyAwaitable
-{
-    private volatile bool finished;
-    public bool IsFinished => finished;
-    public MyAwaitable(bool finished) => this.finished = finished;
-    public void Finish() => finished = true;
-    public MyAwaiter GetAwaiter() => new MyAwaiter(this);
-}
-
-public class MyAwaiter : INotifyCompletion
-{
-    private readonly MyAwaitable awaitable;
-    private readonly SynchronizationContext capturedContext = SynchronizationContext.Current;
-
-    public MyAwaiter(MyAwaitable awaitable) => this.awaitable = awaitable;
-    public bool IsCompleted => awaitable.IsFinished;
-
-    public int GetResult()
-    {
-        SpinWait.SpinUntil(() => awaitable.IsFinished);
-        return new Random().Next();
-    }
-
-    public void OnCompleted(Action continuation)
-    {
-        if (capturedContext != null) capturedContext.Post(state => continuation(), null);
-        else continuation();
-    }
-}
-
-public class MySynchronizationContext : SynchronizationContext
-{
-    public override void Post(SendOrPostCallback d, object state)
-    {
-        Console.WriteLine("Posted to synchronization context");
-        d(state);
-    }
-}
-
-
-
-class Program
+public class Program
 {
     static async Task Main()
     {
-        SynchronizationContext.SetSynchronizationContext(new MySynchronizationContext());
+        Console.WriteLine("Task.GetAwaiter");
+        TestGetAwaiter();
 
-        var awaitable = new MyAwaitable(false);
+        Console.WriteLine("Awaiter class");
 
-        var timer = new Timer(_ => awaitable.Finish(), null, 100, -1);
+        string str = "kf939jvos984ò.vjweu29ppr9,,48cm29q0,dòh35èùcn9394";
+        NumberFromStringAwaitable task = new(str);
+        var result = await task;
+        Console.WriteLine($"nella stringa {str} i numeri sono {result}");
 
-        var result = await awaitable;
-
-        Console.WriteLine(result);
+        //usa il metodo di estensione di String
+        var result2 = await str;
+        Console.WriteLine($"nella stringa {str} i numeri sono {result2}");
     }
 
-    public ValueTask<int> GetCustomerIdAsync()
+    public static void TestGetAwaiter()
     {
-        return new ValueTask(1);
+        string str = "gyf54t6g566tugft6789pljyt421sg8";
 
-        string str;
+        Task<string> getNumberTask = Task.Run(() =>
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (char ch in str)
+            {
+                Task.Delay(1000);//simulo elaborazione
+                if (Char.IsNumber(ch))
+                    sb.Append(ch);
+            }
+            return sb.ToString();
+        });
+
+        var awaiter = getNumberTask.GetAwaiter();
+        Console.WriteLine("Attendo il completamento");
+        awaiter.OnCompleted(() =>
+        {
+            string result = awaiter.GetResult();
+            Console.WriteLine(result); // risultato
+        });
     }
 }

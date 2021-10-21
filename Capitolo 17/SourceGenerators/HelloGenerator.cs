@@ -11,6 +11,8 @@ namespace MyGenerator
 
         public void Execute(GeneratorExecutionContext context)
         {
+            System.Diagnostics.Debugger.Launch();
+
             var mainMethod = context.Compilation.GetEntryPoint(context.CancellationToken);
 
             // build up the source code

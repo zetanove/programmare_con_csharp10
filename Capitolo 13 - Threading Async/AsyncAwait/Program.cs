@@ -16,31 +16,14 @@ namespace AsyncAwait
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("before");
             MetodoAsincrono();
             Console.WriteLine("after");
             EsecuzioneConcorrente();
 
-            UseAwait();
-
-            Console.WriteLine("Task.GetAwaiter");
-            TestGetAwaiter();
-
-            Console.WriteLine("Awaiter class");
-
-            string str = "kf939jvos984ò.vjweu29ppr9,,48cm29q0,dòh35èùcn9394";
-            NumberFromStringAwaitable task = new(str);
-            var result = await task;
-            Console.WriteLine($"nella stringa {str} i numeri sono {result}");
-
-            //usa il metodo di estensione
-            var result2 = await str;
-            Console.WriteLine($"nella stringa {str} i numeri sono {result2}");
-
-            Test t = new Test();
-            var r = await t;
+            UseAwait();            
         }
 
         private async static void UseAwait()
@@ -121,32 +104,7 @@ namespace AsyncAwait
             Console.WriteLine(task1.Result);
             Console.WriteLine(task2.Result);
 
-        }
-
-        public static void TestGetAwaiter()
-        {
-            string str = "gyf54t6g566tugft6789pljyt421sg8";
-            
-            Task<string> getNumberTask = Task.Run(() =>
-            {
-                StringBuilder sb = new StringBuilder();
-                foreach (char ch in str)
-                {
-                    Task.Delay(1000);//simulo elaborazione
-                    if (Char.IsNumber(ch))
-                        sb.Append(ch);
-                }
-                return sb.ToString();
-            });
-
-            var awaiter = getNumberTask.GetAwaiter();
-            Console.WriteLine("Attendo il completamento");
-            awaiter.OnCompleted(() =>
-            {
-                string result = awaiter.GetResult();
-                Console.WriteLine(result); // risultato
-            });
-        }
+        }      
            
     }
 }

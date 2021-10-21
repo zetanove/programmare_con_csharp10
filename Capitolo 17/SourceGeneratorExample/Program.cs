@@ -1,5 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace HelloWorldGenerated
+{
+    partial class Program
+    {
+        static void Main(string[] args)
+        {
+            HelloFrom("Program");
+        }
+
+        static partial void HelloFrom(string name);
+    }
+}
 
 
-HelloWorldGenerated.HelloWorld.SayHello();
+

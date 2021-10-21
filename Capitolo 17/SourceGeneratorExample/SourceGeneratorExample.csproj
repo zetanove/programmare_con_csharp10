@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SourceGenAssembly\SourceGenAssembly.csproj" />
+	  <ProjectReference Include="..\SourceGenerators\SourceGenerators.csproj" >
+		  <OutputItemType>Analyzer</OutputItemType>
+	  </ProjectReference>
   </ItemGroup>
 
 </Project>

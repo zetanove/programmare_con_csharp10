@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Programmare con C# 10 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 13: Async streams
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

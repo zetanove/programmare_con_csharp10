@@ -1,4 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
+ * Programmare con C# 10 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 13: gestione di task lunghi
+ */
+
 Console.WriteLine("Hello, World!");
 
 Task longTask = Task.Factory.StartNew(() =>

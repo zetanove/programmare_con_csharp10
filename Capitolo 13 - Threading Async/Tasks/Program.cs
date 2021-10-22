@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 13: gestione di task
  */
@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -38,15 +39,6 @@ namespace Tasks
             longTask.Wait(2000);
             Console.WriteLine("after wait..." );
 
-            Task longTask2 = Task.Factory.StartNew(() =>
-                {
-                    for (int i = 0; i < 100; i++)
-                    {
-                        Thread.Sleep(100);
-                    }
-                },
-                TaskCreationOptions.LongRunning);
-
 
             List<Task> tasks = new List<Task>();
             for (int i = 1; i <= 5; i++)
@@ -64,15 +56,18 @@ namespace Tasks
             }
             
             Task.WaitAll(tasks.ToArray());
-            Console.WriteLine("all tasks completed"); 
-            
-            //results
-            Task<string> tsr = Task<string>.Run(() =>
-            {
-                return DownloadHtml("http://www.microsoft.com");
-            });
-            string str = tsr.Result;
+            Console.WriteLine("all tasks completed");
 
+            //results
+            Task<string> task = Task<string>.Run(() =>
+            {
+                string url = "http://www.antoniopelleriti.it";
+                HttpClient client = new HttpClient();
+                return client.GetStringAsync(url);
+            });
+
+            string result = task.Result;
+           
 
             //continuation
             Task ts = Task.Run(() => Operation(1000)).ContinueWith((task) => Operation(2000));
@@ -84,6 +79,7 @@ namespace Tasks
             {
                 return DownloadHtml("http://www.microsoft.com");
             });
+
             Task<int> taskVocali = webtask.ContinueWith<int>(downloadTask =>
                 {
                     int count=0;
@@ -182,10 +178,12 @@ namespace Tasks
             Console.WriteLine("End operation at {0}", DateTime.Now);
         }
 
-        public static string DownloadHtml(string url)
+        public static async Task<string> DownloadHtml(string url)
         {
-            WebClient wc=new WebClient();
-            return wc.DownloadString(url);
+            using (HttpClient wc = new())
+            {
+                return await wc.GetStringAsync(url);
+            }
         }
     }
 }

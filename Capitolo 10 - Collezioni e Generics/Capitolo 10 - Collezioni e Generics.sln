@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classi generiche", "Classi generiche\Classi generiche.csproj", "{B334A8CE-9C45-490F-BA18-A885C2555116}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TupleLiteral", "TupleLiteral\TupleLiteral.csproj", "{7A66EABC-E486-45B9-B33F-0829CF585A27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Varianza", "Varianza\Varianza.csproj", "{AD02AD11-BD4D-42AD-9171-F61172A71177}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{B334A8CE-9C45-490F-BA18-A885C2555116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B334A8CE-9C45-490F-BA18-A885C2555116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B334A8CE-9C45-490F-BA18-A885C2555116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A66EABC-E486-45B9-B33F-0829CF585A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD02AD11-BD4D-42AD-9171-F61172A71177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD02AD11-BD4D-42AD-9171-F61172A71177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD02AD11-BD4D-42AD-9171-F61172A71177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD02AD11-BD4D-42AD-9171-F61172A71177}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

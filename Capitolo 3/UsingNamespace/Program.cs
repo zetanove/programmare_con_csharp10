@@ -3,7 +3,7 @@
  * Capitolo 3: i namespace e using
  */
 
-using static System.Console;
+global using static System.Console;
 using Draw = System.Drawing; //alias di namespace
 
 namespace Using

@@ -11,7 +11,7 @@ namespace MyGenerator
 
         public void Execute(GeneratorExecutionContext context)
         {
-            System.Diagnostics.Debugger.Launch();
+            //System.Diagnostics.Debugger.Launch();
 
             var mainMethod = context.Compilation.GetEntryPoint(context.CancellationToken);
 
@@ -27,8 +27,7 @@ namespace MyGenerator
                     {{
                         static partial void HelloFrom(string name)
                         {{
-                            Console.WriteLine($""Sono un source generator: Ciao da '{{name}}'"");
-                            
+                            Console.WriteLine($""Sono un source generator: Ciao da '{{name}}'"");                            
                         }}
                     }}
                 }}

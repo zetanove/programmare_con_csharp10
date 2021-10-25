@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--contiene dati sui veicoli-->
+<veicoli>
+  <veicolo targa="AB123CD">
+    <marca>Alfa Romeo</marca>
+    <modello>GT</modello>
+  </veicolo>
+</veicoli>

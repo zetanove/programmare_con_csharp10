@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Classe>
+  <Studente>
+    <Nome>Mario</Nome>
+    <Cognome>Bianchi</Cognome>
+  </Studente>
+  <Studente>
+    <Nome>Matilda</Nome>
+    <Cognome>Rossi</Cognome>
+  </Studente>
+</Classe>

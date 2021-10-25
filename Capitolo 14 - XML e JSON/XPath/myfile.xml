@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<veicoli>
+  <veicolo targa="AB123CD">
+    <marca>Alfa Romeo</marca>
+    <modello>GT</modello>
+    <alimentazione tipo="Gasolio">
+      <consumo>14</consumo>
+    </alimentazione>
+  </veicolo>
+  <veicolo targa="EF456GH">
+    <marca>Alfa Romeo</marca>
+    <modello>Spider</modello>
+  </veicolo>
+  <veicolo targa="AB999ZZ">
+    <marca>FIAT</marca>
+    <modello>UNO</modello>
+  </veicolo>
+</veicoli>

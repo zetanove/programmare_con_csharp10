@@ -1,4 +1,10 @@
-﻿using System.Text.Json;
+﻿/*
+ * Programmare con C# 10 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 14: JSON Serialization
+ */
+
+using System.Text.Json;
 
 public class Program
 {
@@ -33,9 +39,9 @@ public class Program
 		HttpClient client = new HttpClient();
 		var response = await client.GetStringAsync("https://ipinfo.io/8.8.8.8/geo");
 		var info = JsonSerializer.Deserialize<IpInfo>(response);
-		Console.WriteLine(info);
+		Console.WriteLine(info);		
 	}
-	
+
 }
 
 public record struct IpInfo

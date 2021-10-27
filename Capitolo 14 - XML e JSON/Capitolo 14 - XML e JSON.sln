@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssReader", "RssReader\RssR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPath", "XPath\XPath.csproj", "{6C8FD3E8-A4B1-49CF-8DCE-16934391DAB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON Serialization", "..\JSON Serialization\JSON Serialization.csproj", "{D588A27B-E8EC-498E-9029-89A1DCB9F8E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON Serialization", "..\JSON Serialization\JSON Serialization.csproj", "{D588A27B-E8EC-498E-9029-89A1DCB9F8E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json DOM", "Json DOM\Json DOM.csproj", "{D90D70CB-C0E3-4F5C-834A-37B3562E54BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D588A27B-E8EC-498E-9029-89A1DCB9F8E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D588A27B-E8EC-498E-9029-89A1DCB9F8E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D588A27B-E8EC-498E-9029-89A1DCB9F8E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D90D70CB-C0E3-4F5C-834A-37B3562E54BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D90D70CB-C0E3-4F5C-834A-37B3562E54BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D90D70CB-C0E3-4F5C-834A-37B3562E54BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D90D70CB-C0E3-4F5C-834A-37B3562E54BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

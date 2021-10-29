@@ -1,0 +1,7 @@
+﻿il file database.sql 
+contiene gli script necessari a creare il database utilizzato dall'applicazione che implementa l'esercizio 16.3.
+eseguirlo quindi prima di avviare l'applicazione.
+
+una volta creato il database, aggiornare la stringa di connessione, memorizzata nel campo statico 
+ConnString all'interno del file Program.cs
+

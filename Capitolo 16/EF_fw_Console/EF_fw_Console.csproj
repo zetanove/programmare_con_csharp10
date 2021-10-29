@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40C8F1E8-515B-4FE5-8A9C-1E2F29CDEFFC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EF_fw_Console</RootNamespace>
+    <AssemblyName>EF_fw_Console</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuyingGroups.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BuyingGroups_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cities.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cities_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColdRoomTemperatures.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ColdRoomTemperatures_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Colors.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Colors_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Countries.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Countries_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCategories.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCategories_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers1.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTransactions.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryMethods.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryMethods_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetermineCustomerAccess_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetMovementUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetOrderUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPurchaseUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSaleUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetStockHoldingUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetTransactionUpdates_Result.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceLines.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderLines.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageTypes.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PackageTypes_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMethods.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentMethods_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="People.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="People_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs">
+      <DependentUpon>SsampleDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrderLines.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrders.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialDeals.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SsampleDatabase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SsampleDatabase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SsampleDatabase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SsampleDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SsampleDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SsampleDatabase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="StateProvinces.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StateProvinces_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockGroups.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockGroups_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemHoldings.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItems.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemStockGroups.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItems_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockItemTransactions.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierCategories.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierCategories_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers1.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierTransactions.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemParameters.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypes.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionTypes_Archive.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTemperatures.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleTemperatures1.cs">
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Veicolo.cs">
+      <DependentUpon>SsampleDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WideWorldImporters.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideWorldImporters.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WideWorldImporters.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideWorldImporters.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WideWorldImporters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="SsampleDatabase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SsampleDatabase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SsampleDatabase.edmx.diagram">
+      <DependentUpon>SsampleDatabase.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="WideWorldImporters.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WideWorldImporters.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="WideWorldImporters.edmx.diagram">
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SsampleDatabase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SsampleDatabase.edmx</DependentUpon>
+      <LastGenOutput>SsampleDatabase.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SsampleDatabase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SsampleDatabase.edmx</DependentUpon>
+      <LastGenOutput>SsampleDatabase.cs</LastGenOutput>
+    </Content>
+    <Content Include="WideWorldImporters.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+      <LastGenOutput>WideWorldImporters.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WideWorldImporters.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WideWorldImporters.edmx</DependentUpon>
+      <LastGenOutput>WideWorldImporters.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

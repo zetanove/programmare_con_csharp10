@@ -18,11 +18,12 @@ namespace EFCore_Hello
         public Person Person { get; set; }
     }
 
-    public class Person
+    public record Person
     {
-        public int PersonId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        [Key]
+        public int PersonId { get; init; }
+        public string FirstName { get; init; }
+        public string LastName { get; init; }
     }
 
 }

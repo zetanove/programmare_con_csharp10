@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystem", "FileSystem\Fi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistryAccess", "RegistryAccess\RegistryAccess.csproj", "{9A40BE02-40F5-44D0-8994-F97B13268390}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compression", "Compression\Compression.csproj", "{3FCC0ADC-AF2F-4204-8543-B605CC993D7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Compression", "Compression\Compression.csproj", "{3FCC0ADC-AF2F-4204-8543-B605CC993D7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore Hello", "EFCore Hello\EFCore Hello.csproj", "{0425AF15-1220-4400-973B-AB060C8530E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore Hello", "EFCore Hello\EFCore Hello.csproj", "{0425AF15-1220-4400-973B-AB060C8530E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore scaffold", "EFCore scaffold\EFCore scaffold.csproj", "{089F0819-DAE4-469B-8E64-8A00DBDC0818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding", "DataBinding\DataBinding.csproj", "{5268D93E-D641-44F9-9B9F-DCCA9EC93C9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{0425AF15-1220-4400-973B-AB060C8530E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0425AF15-1220-4400-973B-AB060C8530E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0425AF15-1220-4400-973B-AB060C8530E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089F0819-DAE4-469B-8E64-8A00DBDC0818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089F0819-DAE4-469B-8E64-8A00DBDC0818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089F0819-DAE4-469B-8E64-8A00DBDC0818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089F0819-DAE4-469B-8E64-8A00DBDC0818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5268D93E-D641-44F9-9B9F-DCCA9EC93C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5268D93E-D641-44F9-9B9F-DCCA9EC93C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5268D93E-D641-44F9-9B9F-DCCA9EC93C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5268D93E-D641-44F9-9B9F-DCCA9EC93C9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -42,7 +42,8 @@ namespace EFCore_Hello
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=cars.db");
+            optionsBuilder.LogTo(Console.WriteLine, LogLevel.Information)
+                .UseSqlite("Data Source=cars.db");
         }
     }
 

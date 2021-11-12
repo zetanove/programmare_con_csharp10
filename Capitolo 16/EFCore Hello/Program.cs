@@ -53,6 +53,7 @@ using (var db = new CarContext())
 	Console.WriteLine("{0} eliminati", deleted);
 
 	last = await db.Cars.OrderBy(c => c.CarId).LastAsync();
-
 	deleted = await db.Database.ExecuteSqlInterpolatedAsync($"DELETE FROM Car WHERE Targa={last.Targa}");
+
+
 }

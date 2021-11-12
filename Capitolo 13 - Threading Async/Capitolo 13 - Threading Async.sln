@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChildTasks", "ChildTasks\Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks", "Tasks\Tasks.csproj", "{6E90D59E-0023-447A-A173-225726315511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongTasks", "LongTasks\LongTasks.csproj", "{B686F224-A6A8-4925-B2C9-BAED485A5C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LongTasks", "LongTasks\LongTasks.csproj", "{B686F224-A6A8-4925-B2C9-BAED485A5C6B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multithreading", "Multithreading\Multithreading.csproj", "{581BF7DF-D686-434A-87DA-DD98C41C92D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskContinuation", "TaskContinuation\TaskContinuation.csproj", "{CB9251C4-E71F-49E7-91D9-12BE02EBAEE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{581BF7DF-D686-434A-87DA-DD98C41C92D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581BF7DF-D686-434A-87DA-DD98C41C92D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581BF7DF-D686-434A-87DA-DD98C41C92D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9251C4-E71F-49E7-91D9-12BE02EBAEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9251C4-E71F-49E7-91D9-12BE02EBAEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9251C4-E71F-49E7-91D9-12BE02EBAEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9251C4-E71F-49E7-91D9-12BE02EBAEE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

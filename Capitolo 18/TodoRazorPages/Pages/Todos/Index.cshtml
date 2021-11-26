@@ -1,0 +1,54 @@
+﻿@page
+@model TodoRazorPages.Pages.Todos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Elenco Attività</h1>
+
+<p>
+    <a asp-page="Create">Crea Nuova</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TodoActivity[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TodoActivity[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TodoActivity[0].Notes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TodoActivity[0].Completed)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.TodoActivity) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Completed)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Modifica</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Dettagli</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Elimina</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

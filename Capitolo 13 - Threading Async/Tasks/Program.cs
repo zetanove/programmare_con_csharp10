@@ -116,20 +116,7 @@ namespace Tasks
             all3.Wait();
             Console.WriteLine("task3Array completed");
 
-            Task<int> taskDiv = Task.Run<int>(() => Dividi(1, 0));
-            try
-            {
-                int risultato = taskDiv.Result;
-            }
-            catch(AggregateException aggrEx)
-            {
-                if (taskDiv.IsFaulted)
-                {
-                    Console.WriteLine("il task è fallito");
-                    Console.WriteLine(taskDiv.Exception.ToString());
-                }
-                else Console.WriteLine(aggrEx.InnerException.ToString());
-            }
+            
 
 
             var cancelTokenSource = new CancellationTokenSource();
@@ -166,10 +153,7 @@ namespace Tasks
         }
 
 
-        public static int Dividi(int x, int y)
-        {
-            return x / y;
-        }
+        
 
         public static  void Operation(int time)
         {

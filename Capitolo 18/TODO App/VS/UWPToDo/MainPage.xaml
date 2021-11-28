@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="UWPToDo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPToDo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+        </Grid.RowDefinitions>
+        <controls:DataGrid x:Name="dataGrid" ItemsSource="{Binding Activities}">
+        </controls:DataGrid>
+        <Button x:Name="btCarica" Content="Carica Dati" Margin="10" Grid.Row="1" HorizontalAlignment="Right" Click="BtCarica_Click"/>
+
+    </Grid>
+</Page>

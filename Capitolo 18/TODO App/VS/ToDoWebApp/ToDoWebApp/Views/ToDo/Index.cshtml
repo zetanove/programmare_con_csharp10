@@ -1,0 +1,33 @@
+﻿@model TodoActivityViewModel
+@{
+    ViewData["Title"] = "Elenco Attività";
+}
+
+<h1>Elenco Attività: @Model.Activities.Count elementi</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr style="font-weight:bold">
+
+            <td>titolo</td>
+            <td>data</td>
+            <td>completata</td>
+        </tr>
+    </thead>
+    @foreach (var item in Model.Activities)
+    {
+        <tr>
+            <td><a href="/Todo/EditActivity/@item.Id">@item.Title</a></td>
+            <td>@item.Date?.ToShortDateString()</td>
+            <td>
+                <input checked="@item.Completed" type="checkbox">
+            </td>
+            
+        </tr>
+    }
+</table>
+
+<div>
+    <!-- TODO: Add item form -->
+    <a href="/Todo/EditActivity">aggiungi</a>
+</div>

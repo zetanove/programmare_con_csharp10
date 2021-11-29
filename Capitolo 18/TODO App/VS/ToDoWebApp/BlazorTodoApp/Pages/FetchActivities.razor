@@ -1,0 +1,68 @@
+﻿@page "/fetchactivities"
+@using Newtonsoft.Json
+@inject HttpClient Http
+
+<PageTitle>Le mie attività</PageTitle>
+
+<h1>Le mie attività</h1>
+
+
+
+@if (activities == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Notes</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var att in activities)
+            {
+                <tr>
+                    <td>@att.Title</td>
+                    <td>@att.Date.ToString()</td>
+                    <td>@att.Notes</td>
+                    <td>@att.Completed</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<TodoActivity> activities;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var json = await Http.GetStringAsync("http://localhost:5000/api/Rest");
+        var data = JsonConvert.DeserializeObject<List<TodoActivity>>(json);
+        activities = new List<TodoActivity>(); 
+    }
+
+    public class TodoActivity
+    {
+        public Guid Id { get; set; }
+        public string Title { get; set; }
+        public DateTime? Date { get; set; }
+        public string Notes { get; set; }
+        public bool Completed { get; set; }
+    }
+
+    public class TodoActivityViewModel
+    {
+        public List<TodoActivity> Activities { get; set; }
+
+        public TodoActivityViewModel()
+        {
+            Activities = new List<TodoActivity>();
+        }
+    }
+}

@@ -44,7 +44,7 @@ else
     {
         var json = await Http.GetStringAsync("http://localhost:5000/api/Rest");
         var data = JsonConvert.DeserializeObject<List<TodoActivity>>(json);
-        activities = new List<TodoActivity>(); 
+        activities = data; 
     }
 
     public class TodoActivity

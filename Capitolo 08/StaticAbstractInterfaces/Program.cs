@@ -34,7 +34,9 @@ namespace Interfacce
 
     public struct MyStruct : ITestStaticAbstract
     {
-        public static int MyProperty { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public static int MyProperty { 
+            get => throw new NotImplementedException(); 
+            set => throw new NotImplementedException(); }
 
         public static bool MyMethod(string str)
         {

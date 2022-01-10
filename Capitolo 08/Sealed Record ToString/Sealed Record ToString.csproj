@@ -4,9 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Sealed_Record_ToString</RootNamespace>
-    <ImplicitUsings>false</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <LangVersion>9</LangVersion>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
 </Project>

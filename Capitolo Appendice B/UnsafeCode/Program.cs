@@ -27,6 +27,9 @@ namespace UnsafeCode
 
                 *pInt1 = 456;
                 Console.WriteLine("{0} {1}", *pInt1, *pInt2);
+
+                Coords<int>* pCoords; //da C# 8 in poi
+                CoordsU<int>* pCoordsU;
             }
         }
     }
@@ -36,6 +39,18 @@ namespace UnsafeCode
         public int Value;
         public Node* Left;
         public Node* Right;
+    }
+
+    public struct Coords<T>
+    {
+        public T X;
+        public T Y;
+    }
+
+    public struct CoordsU<T> where T : unmanaged //da C# 7.3 in poi
+    {
+        public T X;
+        public T Y;
     }
 
     class NativeMethods

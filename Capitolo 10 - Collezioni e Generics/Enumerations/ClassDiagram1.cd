@@ -1,187 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Enumerations.Class3">
-    <Position X="24.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="System.Object" Collapsed="true">
-    <Position X="10.25" Y="0.75" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="Enumerations.IteratorsTest" Collapsed="true">
-    <Position X="20" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAgIAAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
-      <FileName>IteratorsTest.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Enumerations.Program" Collapsed="true">
-    <Position X="22.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Enumerations.StringColl" Collapsed="true">
-    <Position X="29" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.StringColl2" Collapsed="true">
-    <Position X="26.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.StringEnumerator" Collapsed="true">
-    <Position X="31.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAACAIAAAAAIAAAAAIAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.StringColl3" Collapsed="true">
-    <Position X="33.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.StringColl4" Collapsed="true">
-    <Position X="35.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Class1342" Collapsed="true">
-    <Position X="17.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAACAABAAAAAAEAQAAAAAAAAAAAAAAAAAIAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Class1&lt;T&gt;" Collapsed="true">
-    <Position X="38" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAABAQAAAABAQAAAAAAAAEAAAAAABQIAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Class2" Collapsed="true">
-    <Position X="40.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AEIAAEAAAACAABAQCAAAFAQgAAAAAAAACAAAAABQIAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Class5&lt;T&gt;" Collapsed="true">
-    <Position X="42.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AEIAAEAAAAAAABAQCAAABAQAAAAAAAAECAAAAABQIAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Class5&lt;T, V&gt;" Collapsed="true">
-    <Position X="44.75" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>CAIAAAAAAAAEABAQCAAABAQAAAAAAAAEAAAgAABQIAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Cls234234&lt;T&gt;" Collapsed="true">
-    <Position X="13.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAoAABBAACBAQBBQAAAABAQAIAAAACAEAgAAAABQIAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Enumerations.Cls234&lt;T&gt;" Collapsed="true">
-    <Position X="15.5" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAABAACAAAAAQAAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Interface Name="System.Collections.Generic.IEnumerable&lt;T&gt;" Collapsed="true">
-    <Position X="17" Y="10.5" Width="1.5" />
+    <Position X="15.25" Y="11" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.Generic.IEnumerator&lt;T&gt;" Collapsed="true">
-    <Position X="17" Y="9.25" Width="1.5" />
+    <Position X="15.25" Y="10" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.IEnumerable" Collapsed="true">
-    <Position X="11.75" Y="10.5" Width="1.5" />
+    <Position X="11.75" Y="11" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.IEnumerator" Collapsed="true">
-    <Position X="11.75" Y="9.25" Width="1.5" />
+    <Position X="11.75" Y="10" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.IDictionary" Collapsed="true" HideInheritanceLine="true">
-    <Position X="10.5" Y="13.75" Width="1.5" />
+    <Position X="11" Y="13.75" Width="1.25" />
     <InheritanceLine Type="System.Collections.IEnumerable" IsHidden="true" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true" HideInheritanceLine="true">
-    <Position X="15.75" Y="12" Width="1.5" />
+    <Position X="14.5" Y="12.25" Width="1.5" />
     <InheritanceLine Type="System.Collections.IEnumerable" IsHidden="true" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;" Collapsed="true" HideInheritanceLine="true">
-    <Position X="17" Y="13.75" Width="2.5" />
+    <Position X="15.5" Y="13.75" Width="2" />
     <InheritanceLine Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey, TValue&gt;&gt;" IsHidden="true" />
     <InheritanceLine Type="System.Collections.IEnumerable" IsHidden="true" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.IList" Collapsed="true" HideInheritanceLine="true">
-    <Position X="12.5" Y="13.75" Width="1.5" />
+    <Position X="12.5" Y="13.75" Width="1.25" />
     <InheritanceLine Type="System.Collections.IEnumerable" IsHidden="true" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.Generic.IList&lt;T&gt;" Collapsed="true" HideInheritanceLine="true">
-    <Position X="14.75" Y="13.75" Width="1.75" />
+    <Position X="14" Y="13.75" Width="1.25" />
     <InheritanceLine Type="System.Collections.Generic.IEnumerable&lt;T&gt;" IsHidden="true" />
     <InheritanceLine Type="System.Collections.IEnumerable" IsHidden="true" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.ICollection" Collapsed="true">
-    <Position X="11.75" Y="12" Width="1.5" />
+    <Position X="11.75" Y="12.25" Width="1.5" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.Generic.IReadOnlyList&lt;T&gt;" Collapsed="true" HideInheritanceLine="true">
-    <Position X="18" Y="12" Width="1.5" />
+    <Position X="16.25" Y="12.25" Width="1.5" />
     <InheritanceLine Type="System.Collections.IEnumerable" IsHidden="true" />
     <TypeIdentifier />
   </Interface>
   <Interface Name="System.Collections.Generic.ISet&lt;T&gt;" Collapsed="true" HideInheritanceLine="true">
-    <Position X="20" Y="13.75" Width="1.5" />
+    <Position X="17.75" Y="13.75" Width="1.25" />
     <InheritanceLine Type="System.Collections.Generic.ICollection&lt;T&gt;" ManuallyRouted="true">
       <Path>
-        <Point X="16.5" Y="12.82" />
-        <Point X="16.5" Y="13.375" />
-        <Point X="20.75" Y="13.375" />
-        <Point X="20.75" Y="13.75" />
+        <Point X="15.25" Y="13.07" />
+        <Point X="15.25" Y="13.375" />
+        <Point X="18.375" Y="13.375" />
+        <Point X="18.375" Y="13.75" />
       </Path>
     </InheritanceLine>
     <InheritanceLine Type="System.Collections.Generic.IEnumerable&lt;T&gt;" IsHidden="true" />

@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cap10_LINQ
+namespace EsempiLINQ
 {
     class Program
     {
@@ -73,6 +73,8 @@ namespace Cap10_LINQ
 
             foreach (var result in qs)
                 Console.WriteLine(result); //risultato 16, 36
+
+
         }
     }
 }

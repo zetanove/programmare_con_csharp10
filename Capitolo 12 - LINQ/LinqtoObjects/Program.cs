@@ -202,6 +202,21 @@ namespace LinqToObjects
             query = array.TakeWhile(i => i < 3);//2,3,2,3
             Console.WriteLine("TakeWhile");
             Dump(query);
+
+            //range
+            query = array.Take(..^3);// 1, 1, 2, 3, 1 
+            Console.WriteLine("Take (esclusi ultimi 3)");
+            Dump(query);
+
+            //range
+            query = array.Take(^3..);// 2, 1, 3
+            Console.WriteLine("Take (ultimi 3)");
+            Dump(query);
+
+            //range
+            query = array.Take(3..^2);// 3, 1, 2
+            Console.WriteLine("Take (da indice 3 a terzultimo)");
+            Dump(query);
         }
 
         public static void Dump(IEnumerable query)

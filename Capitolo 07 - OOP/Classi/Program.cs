@@ -1,7 +1,8 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
+ * https://amzn.to/3qEZxae
  * Autore: Antonio Pelleriti
- * Capitolo 6: classi
+ * Capitolo 7: classi
  */
 
 using System;

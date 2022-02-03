@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilizzo Tipi", "Utilizzo t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conversioni", "Conversioni\Conversioni.csproj", "{9544D985-93CD-458D-984B-9FF5DD83464B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nullable Reference", "Nullable Reference\Nullable Reference.csproj", "{04970DDA-BAA2-4F3D-A033-35719CF161FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nullable Reference", "Nullable Reference\Nullable Reference.csproj", "{04970DDA-BAA2-4F3D-A033-35719CF161FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerazioni", "Enumerazioni\Enumerazioni.csproj", "{9105CDAF-1408-42F4-ABFD-DAC6D74AEC53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{04970DDA-BAA2-4F3D-A033-35719CF161FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04970DDA-BAA2-4F3D-A033-35719CF161FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04970DDA-BAA2-4F3D-A033-35719CF161FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9105CDAF-1408-42F4-ABFD-DAC6D74AEC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9105CDAF-1408-42F4-ABFD-DAC6D74AEC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9105CDAF-1408-42F4-ABFD-DAC6D74AEC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9105CDAF-1408-42F4-ABFD-DAC6D74AEC53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -70,6 +70,7 @@ switch (day)
         break;
 }
 
+//pattern relazionali
 switch (DateTime.Now.DayOfWeek)
 {
     case DayOfWeek.Monday:
@@ -87,6 +88,7 @@ switch (DateTime.Now.DayOfWeek)
 Combinators();
 void Combinators()
 {
+    //pattern logici
     Console.WriteLine("pattern combinator. Digita un tasto");
     var ch = Console.ReadKey().KeyChar;
     switch (ch)
@@ -128,20 +130,22 @@ switch (language)
         break;
 }
 
+//pattern
 object obj = null; //provate a sostituire con new Quadrato() o new Cerchio()
 switch (obj)
 {
     case Quadrato:
         Console.WriteLine("L'oggetto è un quadrato");
         break;
-    case null:
+    case null: //null case
         Console.WriteLine("L'oggetto è null");
         break;
-    case var o:
+    case var o: //pattern var
         Console.WriteLine($"L'oggetto è di tipo {o.GetType()}");
         break;
 };
 
+//espressione switch
 greeting = language switch
 {
     "eng" => "Hello",
@@ -149,7 +153,6 @@ greeting = language switch
     "ita" => "Ciao",
     _ => "???"
 };
-
 Console.WriteLine(greeting);
 
 language = "deu";
@@ -160,6 +163,8 @@ greeting = language switch
     "ita" => "Ciao",
     _ => "???"
 };
+
+
 
 Quadrato q = new Quadrato();
 q.Lato = 5;
@@ -247,7 +252,7 @@ class Figura
                 Quadrato q when q.Lato < 0 => throw new ArgumentException(),
                 Quadrato q when (q.Lato is > 0 and < 100) => q.Lato * q.Lato,
                 Cerchio c => c.Raggio * Math.PI * Math.PI,
-                _ => throw new NotImplementedException()
+                _ => throw new NotImplementedException() //pattern discard
             };
         }
     }

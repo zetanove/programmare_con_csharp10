@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipi valore nullable e tipi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeOfTest", "TypeOfTest\TypeOfTest.csproj", "{AE531F66-0F98-4509-B218-30E38529586A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uso di array", "Uso di array\Uso di array.csproj", "{CF1F32D2-7D8E-4176-9E08-6FD0CE2042DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{AE531F66-0F98-4509-B218-30E38529586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE531F66-0F98-4509-B218-30E38529586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE531F66-0F98-4509-B218-30E38529586A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1F32D2-7D8E-4176-9E08-6FD0CE2042DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1F32D2-7D8E-4176-9E08-6FD0CE2042DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1F32D2-7D8E-4176-9E08-6FD0CE2042DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1F32D2-7D8E-4176-9E08-6FD0CE2042DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

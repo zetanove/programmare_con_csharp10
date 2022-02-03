@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch", "Switch\Switch.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Istruzione If", "Istruzione If\Istruzione If.csproj", "{6ADF1CEE-9AAC-4433-8C9A-2D9796F5A59D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterazioni", "Iterazioni\Iterazioni.csproj", "{A0B8A8B5-51B2-44B5-A321-642A82D74E74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6ADF1CEE-9AAC-4433-8C9A-2D9796F5A59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADF1CEE-9AAC-4433-8C9A-2D9796F5A59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADF1CEE-9AAC-4433-8C9A-2D9796F5A59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B8A8B5-51B2-44B5-A321-642A82D74E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B8A8B5-51B2-44B5-A321-642A82D74E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B8A8B5-51B2-44B5-A321-642A82D74E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B8A8B5-51B2-44B5-A321-642A82D74E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+using MetodiParziali;
+
+Class1 c=new();
+c.Method2(1);

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enumerazioni", "Enumerazion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipi valore nullable e tipi anonimi", "Tipi anonimi\Tipi valore nullable e tipi anonimi.csproj", "{80CC55E0-5BD2-442E-B922-B391E7B30C77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeOfTest", "TypeOfTest\TypeOfTest.csproj", "{AE531F66-0F98-4509-B218-30E38529586A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{80CC55E0-5BD2-442E-B922-B391E7B30C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80CC55E0-5BD2-442E-B922-B391E7B30C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80CC55E0-5BD2-442E-B922-B391E7B30C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE531F66-0F98-4509-B218-30E38529586A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE531F66-0F98-4509-B218-30E38529586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE531F66-0F98-4509-B218-30E38529586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE531F66-0F98-4509-B218-30E38529586A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

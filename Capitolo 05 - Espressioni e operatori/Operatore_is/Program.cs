@@ -68,20 +68,15 @@ namespace IsPatternMatching
                 }
             }
 
-
-            object obj1 = new Customer() { Name = "Francy", Telephone = "347" };
-
-            if (obj1 is Customer { Telephone: string tel } customer && tel.StartsWith("347"))
-            {
-                Console.WriteLine($"Nome: {customer.Name}"); //stampa Nome: Francy
-            }
-
             var a = new { x = 1, y = 2, z = 3 }; //x=1, y=2, z=3
             if (a is { x: 1, y: _, z: 3 })
             {
                 Console.WriteLine(a.ToString());
             }
 
+
+
+            //pattern relazionali
             int num = 1;
             
             if(num is > 0)
@@ -89,7 +84,7 @@ namespace IsPatternMatching
                 Console.WriteLine($"{num} è > 0");
             }
 
-
+            //pattern logici
             char? ch = 'h';
             bool notNull = ch is not null;
 
@@ -99,6 +94,16 @@ namespace IsPatternMatching
 
             bool lettera = ch is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z');
 
+
+            //pattern ricorsivi
+            object obj1 = new Customer() { Name = "Francy", Telephone = "347" };
+
+            if (obj1 is Customer { Telephone: string tel } customer && tel.StartsWith("347"))
+            {
+                Console.WriteLine($"Nome: {customer.Name}"); //stampa Nome: Francy
+            }
+
+            
             Console.ReadLine();
         }
     }

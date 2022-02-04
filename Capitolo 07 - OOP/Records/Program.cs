@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+using System;
+
 Console.WriteLine("Records!");
 
 Point3D p1 = new(1,2,3);

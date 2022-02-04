@@ -11,40 +11,59 @@ namespace Classi
 {
     public class SmartPhone
     {
+        //campo statico
         public static int Contatore;
-        public const int MaxLunghezzaNome=20;
-        public string Marca;
-        public string Modello { get; private set; }
-        public readonly DateTime CreationTime=DateTime.Now;
+        //campo costante
+        public const int MaxLunghezzaNome = 20;
 
+        public string Marca;
+
+        public string Modello { get; private set; }
+        public readonly DateTime CreationTime = DateTime.Now;
+
+        //costruttore statico
         static SmartPhone()
         {
             Contatore = 0;
         }
 
-        public SmartPhone()
+        //uso di this
+        public SmartPhone() : this("marca sconosciuta")
         {
-            
+
         }
 
-        //expression body in costruttore
+        //uso di this con le proprietà
+        public SmartPhone(string m, string mod)
+        {
+            this.Marca = m;
+            this.Modello = mod;
+        }
+
+        //expression body in costruttore da C# 7
         public SmartPhone(string m) => Marca = Modello = m;
 
-         class Battery
+        //finalizzatore
+        ~SmartPhone()
+        {
+            // logica del finalizzatore
+        }
+
+        class Battery
         {
             Battery()
             {
-               
+
             }
         }
     }
 
     class DefaultValues
     {
-        static int count=0;
-        public byte b=(byte)count++;
-        public sbyte sb=(sbyte)count++;
-        public short s=(short)count++;
+        static int count = 0;
+        public byte b = (byte)count++;
+        public sbyte sb = (sbyte)count++;
+        public short s = (short)count++;
         public ushort us;
         public int i;
         public uint ui;
@@ -54,8 +73,8 @@ namespace Classi
         public double d;
         public char ch;
         public bool bo;
-        public decimal dec=count++;
-        public string str=(count++).ToString();
+        public decimal dec = count++;
+        public string str = (count++).ToString();
     }
 
     class Valori
@@ -97,7 +116,9 @@ namespace Classi
             Valori v = new Valori();
 
 
-            SmartPhone sp = new SmartPhone{ Marca=""};
+            SmartPhone sp = new SmartPhone { Marca = "" };
+
+            SmartPhone sp2 = new("mia marca"); //target typed new da C# 9
             Console.ReadLine();
         }
     }

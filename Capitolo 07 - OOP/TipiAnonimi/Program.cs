@@ -1,9 +1,10 @@
 ﻿/*
+/*
  * Programmare con C# 10 guida completa
+ * https://amzn.to/3qEZxae
  * Autore: Antonio Pelleriti
  * Capitolo 7: tipi anonimi
  */
-
 
 var cliente1 = new { Nome = "bill", Cognome = "gates", DataNascita = new DateTime(1955, 10, 28) };
 var cliente2 = new { Nome = "steve", Cognome = "jobs", DataNascita = new DateTime(1955, 2, 24) };

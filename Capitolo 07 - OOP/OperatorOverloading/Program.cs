@@ -1,10 +1,11 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+/*
+ * Programmare con C# 10 guida completa
+ * https://amzn.to/3qEZxae
  * Autore: Antonio Pelleriti
- * Capitolo 6: overloading operatori
+ * Capitolo 7: operator overloading
  */
- 
- using System;
+using System;
 
 namespace OperatorOverloading
 {

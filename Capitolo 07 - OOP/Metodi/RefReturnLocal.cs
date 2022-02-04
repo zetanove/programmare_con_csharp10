@@ -1,6 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿/*
+ * Programmare con C# 10 guida completa
+ * https://amzn.to/3qEZxae
+ * Autore: Antonio Pelleriti
+ * Capitolo 7: classi
+ */
+
+using System;
 
 namespace Metodi
 {

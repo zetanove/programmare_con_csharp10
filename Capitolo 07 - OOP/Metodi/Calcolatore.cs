@@ -28,8 +28,7 @@ namespace Metodi
             return risultato;
 
         }
-
-        //C# 6: espressioni corpo
+        
         public int Somma(int a, int b) => a + b;
     }
 }

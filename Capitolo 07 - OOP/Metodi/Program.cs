@@ -25,6 +25,7 @@ namespace Metodi
             Console.WriteLine("dopo l'assegnazione: {0}", uomo.altezza);
         }
 
+        //parametro ref
         static void CambiaAltezza2(ref Uomo uomo)
         {
             Console.WriteLine("prima dell'assegnazione: {0}", uomo.altezza);
@@ -33,6 +34,7 @@ namespace Metodi
             Console.WriteLine("dopo l'assegnazione: {0}", uomo.altezza);
         }
 
+        //parametro in
         static void CambiaAltezza3(in Uomo uomo)
         {
             Console.WriteLine("prima dell'assegnazione: {0}", uomo.altezza);
@@ -40,12 +42,14 @@ namespace Metodi
             Console.WriteLine("dopo l'assegnazione: {0}", uomo.altezza);
         }
 
+        //parametri out
         static void PotenzeMultiple(int val, out int potenza2, out int potenza3)
         {
             potenza2 = val * val;
             potenza3 = potenza2 * val;
         }
 
+        //array di parametri
         static double CalcolaMedia(params double[] array)
         {
             double media = 0;
@@ -56,6 +60,8 @@ namespace Metodi
             return media / array.Length;
         }
 
+
+        //parametri opzionali
         static int Optional(int a = 0, int b = 1)
         {
             return a + b;
@@ -66,7 +72,7 @@ namespace Metodi
             Console.WriteLine(i);
         }
 
-        //usato per esempio parametri denominati e posizionali
+        //usato per l'esempio parametri denominati e posizionali
         static int MioMetodo(int a, int b, int c)
         {
             return a + b + c;
@@ -134,17 +140,19 @@ namespace Metodi
             sum = Optional(b: 2);
 
             int somma = calc.Somma(2, 3);
-
+            //invocato con nomi dei parametri
             somma = MioMetodo(a: 1, 2, c: 3);
 
-
+            //ricorsione
             Ricorsione ric = new Ricorsione();
             var fatt = ric.Fattoriale(5);
 
+            //funzioni locali
             LocalFunction lf = new LocalFunction();
             lf.Demo();
             Console.WriteLine(fatt);
 
+            //ref return
             TestRefReturnLocal testRef = new TestRefReturnLocal();
             testRef.PrintNumbers();
             ref int number = ref testRef.FindNumber(7);

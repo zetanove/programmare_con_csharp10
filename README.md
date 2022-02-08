@@ -3,7 +3,7 @@ Esempi del libro Programmare con C# 10 guida completa, Edizioni LSWR 2022.
 
 **ATTENZIONE**: sto aggiornando gli esempi, torna fra qualche giorno per aggiornare il codice che hai scaricato!
 
-![programmare_con_csharp10](https://i0.wp.com/antoniopelleriti.it/wp-content/uploads/2021/11/cover-programmare-con-csharp-10.jpg)
+![programmare_con_csharp10](https://i0.wp.com/antoniopelleriti.it/wp-content/uploads/2021/11/cover-programmare-con-csharp-10.jpg?resize=380%2C582&ssl=1)
 
 
 ## Informazioni

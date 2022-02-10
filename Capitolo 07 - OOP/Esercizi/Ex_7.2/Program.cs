@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 7:
  * Esercizio 2) Implementare una classe che rappresenti un rettangolo con un metodo
@@ -7,8 +7,6 @@
  * crei un oggetto Rettangolo e stampi l’area.
  */
 
-
-using System;
 
 namespace Ex_7._2
 {

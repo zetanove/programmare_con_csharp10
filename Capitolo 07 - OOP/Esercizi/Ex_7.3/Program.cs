@@ -1,10 +1,19 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 7:
- * Esercizio 3) 
+ * Esercizio 3)
+ * Implementare una classe ComplexNumber che rappresenti un numero
+    complesso, cioè un numero con una parte reale e una parte immaginaria.
+    Esso viene rappresentato come a+bi (2-3i, per esempio) in cui a è la parte
+    reale e b è la parte immaginaria. La classe deve avere:
+    • un costruttore per impostare parte reale e immaginaria;
+    • proprietà per leggere e impostare parte reale e immaginaria;
+    • un metodo ToString, che stampi il numero in formato “a + bi”;
+    • un metodo Sum statico per sommare due numeri complessi che restituisca il nuovo numero complesso (la cui parte reale è la somma delle parti reali e
+      la parte immaginaria è la somma delle parti immaginarie).
  */
- using System;
+using System;
 
 namespace Ex_7._3
 {
@@ -28,7 +37,8 @@ namespace Ex_7._3
         private int real;
         private int imaginary;
 
-        public int Real { get
+        public int Real { 
+            get
             {
                 return real;
             }
@@ -67,8 +77,8 @@ namespace Ex_7._3
         public override string ToString()
         {
             if (imaginary > 0)
-                return String.Format("{0}+{1}i", this.real, this.imaginary);
-            else return String.Format("{0}-{1}i", this.real, -this.imaginary);
+                return $"{this.real}+{this.imaginary}i";
+            else return $"{this.real}-{-this.imaginary}i";
         }
     }
 }

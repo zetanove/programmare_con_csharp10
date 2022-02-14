@@ -1,0 +1,4 @@
+Esercizio 1) Scrivere un’applicazione Console con due diversi metodi Main, e compilarla
+su .NET per eseguire prima uno e poi l’altro
+
+vedi progetto MainMultipli

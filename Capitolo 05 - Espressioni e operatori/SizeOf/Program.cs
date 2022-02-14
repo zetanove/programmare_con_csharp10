@@ -24,16 +24,16 @@ public class SizeOfOperator
 {
     public static void Main()
     {
-        Console.WriteLine(sizeof(byte));  // output: 1
-        Console.WriteLine(sizeof(double));  // output: 8
+        Console.WriteLine($"sizeof(byte) = {sizeof(byte)}");  // output: 1
+        Console.WriteLine($"sizeof(double) = {sizeof(double)}");  // output: 8
 
         DisplaySizeOf<Point>();  // output: Size of Point is 24
         DisplaySizeOf<decimal>();  // output: Size of System.Decimal is 16
 
 
         unsafe
-        { 
-            Console.WriteLine(sizeof(Point*));  // output: 8
+        {
+            Console.WriteLine($"sizeof(Point*) = {sizeof(Point*)}");  // output: 8
         }
     }
 

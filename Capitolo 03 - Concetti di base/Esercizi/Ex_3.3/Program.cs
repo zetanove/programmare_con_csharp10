@@ -8,6 +8,7 @@
  */
 
 using System;
+Console.OutputEncoding = System.Text.Encoding.UTF8; //serve per stampare il simbolo € sulla console
 
 float numero = 123.456f;
 Console.WriteLine($"valuta {numero:c2}");

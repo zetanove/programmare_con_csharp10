@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 13:
  * Esercizio 2) Scrivere un’applicazione Console con un metodo asincrono che stampi a 

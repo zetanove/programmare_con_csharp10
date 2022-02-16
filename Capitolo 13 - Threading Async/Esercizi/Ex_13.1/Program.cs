@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 13:
  * Esercizio 1) Scrivere un’applicazione Console che avvii tre diversi thread, che a intervalli

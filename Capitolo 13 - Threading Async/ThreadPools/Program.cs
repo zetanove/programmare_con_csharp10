@@ -1,15 +1,11 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 13: threadpool
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ThreadPools
 {

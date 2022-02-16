@@ -1,5 +1,5 @@
 ﻿/*
- * Programmare con C# 8 guida completa
+ * Programmare con C# 10 guida completa
  * Autore: Antonio Pelleriti
  * Capitolo 13: parallel
  */
@@ -87,11 +87,12 @@ namespace Parallelism
             ParallelLoopResult breakresult= Parallel.For(0, 50, (i, loopState) =>
             {
                 
-                if (i == 5)
+                if (i >= 5)
                 {
                     loopState.Break();
+                    Console.WriteLine($"loopState.Break");
                 } 
-                Console.WriteLine(i);
+                Console.WriteLine($"continue Paraller.For A {i}");
             });
 
             Console.WriteLine("completed: {0}, lowest break iteration: {1} ", breakresult.IsCompleted, breakresult.LowestBreakIteration);
@@ -99,11 +100,13 @@ namespace Parallelism
             Parallel.For(0, 50, (i, loopState) =>
             {
 
-                if (i == 5)
+                if (i >= 5)
                 {
                     loopState.Stop();
+                    Console.WriteLine($"loopState.Stop");
                 }
-                Console.WriteLine(i);
+                
+                Console.WriteLine($"continue Paraller.For B {i}");
             });
 
 

@@ -1,4 +1,10 @@
-﻿bool cache = false;
+﻿/*
+ * Programmare con C# 10 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 13: ValueTask
+ */
+
+bool cache = false;
 int cacheResult=0;
 
 var num = await CachedFunc();

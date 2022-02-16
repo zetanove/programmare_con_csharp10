@@ -1,4 +1,10 @@
-﻿using Awaitable;
+﻿/*
+ * Programmare con C# 10 guida completa
+ * Autore: Antonio Pelleriti
+ * Capitolo 13: Awaitable 
+ */
+
+using Awaitable;
 using System.Text;
 
 public class Program

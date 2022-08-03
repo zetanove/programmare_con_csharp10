@@ -6,7 +6,7 @@ Esempi del libro Programmare con C# 10 guida completa, Edizioni LSWR 2022.
 
 
 ## Errata Corrige
-https://github.com/zetanove/programmare_con_csharp10/raw/main/ErrataCorrige/Errata%20Corrige%20Programmare%20con%20C%23%2010.pdf
+https://github.com/zetanove/programmare_con_csharp10/blob/main/ErrataCorrige/Errata%20Corrige%20Programmare%20con%20C%23%2010.pdf
 
 ## Informazioni
 
